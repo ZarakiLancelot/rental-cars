@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
+import { ClerkProvider, SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import "./globals.css";
 import NextTopLoader from "nextjs-toploader";
 
@@ -16,11 +17,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={outfit.className}>
-        <NextTopLoader color="#000"></NextTopLoader>
-        {children}
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en">
+        <body className={outfit.className}>
+          <NextTopLoader color="#000"></NextTopLoader>
+          {children}
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }
