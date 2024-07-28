@@ -8,7 +8,7 @@ export const dataGeneralSidebar = [
   },
   {
     icon: Calendar,
-    label: "Cars Reserves",
+    label: "Reserved Cars",
     href: "/reserves"
   },
   {
@@ -26,7 +26,7 @@ export const dataAdminSidebar = [
   },
   {
     icon: Calendar,
-    label: "All reserves",
+    label: "All reservations",
     href: "/all-reserves"
   }
 ];
