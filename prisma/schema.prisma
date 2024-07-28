@@ -23,7 +23,7 @@ model Car {
   seats        String   @db.Text
   photo        String   @db.Text
   price        String   @db.Text
-  engine       String   @db.Text
+  type         String   @db.Text
   mileage      String   @db.Text
   fuel         String   @db.Text
   year         String   @db.Text
